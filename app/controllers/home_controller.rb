@@ -3,6 +3,10 @@ class HomeController < ApplicationController
   end
 
   def tchum
+  end
+  
+  def island
+  
 
     
   end
