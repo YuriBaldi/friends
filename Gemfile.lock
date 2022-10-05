@@ -87,6 +87,7 @@ GEM
     debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
+    device_detector (1.0.7)
     digest (3.1.0)
     erubi (1.11.0)
     globalid (1.0.0)
@@ -219,6 +220,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  device_detector (~> 1.0, >= 1.0.7)
   importmap-rails
   jbuilder
   puma (~> 5.0)

@@ -11,16 +11,14 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="field form-group">
+    <%= form.text_field :name, class:"form-control", placeholder: "Name" %>
   </div>
-
-  <div>
-    <%= form.label :arc, style: "display: block" %>
-    <%= form.text_field :arc %>
+  <br>
+  <div class="field form-group">
+    <%= form.text_field :arc, class:"form-control", placeholder: "Arc" %>
   </div>
-
+  <br>
   <div>
     <%= form.submit %>
   </div>

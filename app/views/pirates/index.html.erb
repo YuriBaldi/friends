@@ -2,16 +2,33 @@
 
 <h1>Pirates</h1>
 
-<!--<table class="table table-striped">
-  <thead class="thead-dark">-->
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Nome</th>
+      <th>Tripulacao</th>
+      <th>Recompensa</th>
+    </tr>
+  </thead>
 
+  <tbody>
 <div id="pirates">
   <% @pirates.each do |pirate| %>
-    <%= render pirate %>
     <p>
-      <%= link_to "Show this pirate", pirate %>
+    <tr>
+      <td><%=pirate.nome %> </td>
+      <td><%=pirate.tripulacao %> </td>
+      <td><%=pirate.recompensa  %> </td>
     </p>
-  <% end %>
-</div>
 
-<%= link_to "New pirate", new_pirate_path %>
+<td><%= link_to 'Delete', pirate, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+  <% end %>
+
+  </div>
+  </tbody>
+</table>
+
+<%= link_to "New pirate", new_pirate_path, class: "btn btn-dark" %>
+
+
+

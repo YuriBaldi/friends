@@ -11,21 +11,19 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :nome, style: "display: block" %>
-    <%= form.text_field :nome %>
+  <div class="field form-group">
+    
+    <%= form.text_field :nome, class:"form-control", placeholder: "Nome" %>
   </div>
-
-  <div>
-    <%= form.label :tripulacao, style: "display: block" %>
-    <%= form.text_field :tripulacao %>
+  <br>
+  <div class="field form-group">
+    <%= form.text_field :tripulacao, class:"form-control", placeholder: "Tripulacao" %>
   </div>
-
-  <div>
-    <%= form.label :recompensa, style: "display: block" %>
-    <%= form.number_field :recompensa %>
+  <br>
+  <div class="field form-group">
+    <%= form.number_field :recompensa, class:"form-control", placeholder: "Recompensa" %>
   </div>
-
+  <br>
   <div>
     <%= form.submit %>
   </div>

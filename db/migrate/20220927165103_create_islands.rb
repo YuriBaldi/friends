@@ -3,6 +3,7 @@ class CreateIslands < ActiveRecord::Migration[7.0]
     create_table :islands do |t|
       t.string :name
       t.string :arc
+      t.string :Descricao
 
       t.timestamps
     end
